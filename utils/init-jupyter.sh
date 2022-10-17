@@ -7,9 +7,8 @@ CLONE_DIR=${WORK_DIR}/repo-git
 REPO_URL=https://github.com/amine-bs/deploiement-tutoriel.git
 git clone --depth 1 $REPO_URL $CLONE_DIR
 
-# Put chapter data in the training dir
 cp ${CLONE_DIR}/tutorial.ipynb ${WORK_DIR}/
-
+cp ${CLONE_DIR}/*.yaml ${WORK_DIR}
 # Give write permissions
 chown -R onyxia:users $WORK_DIR/
 
